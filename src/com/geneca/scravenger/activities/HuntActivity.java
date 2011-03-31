@@ -20,12 +20,23 @@ public class HuntActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
 		
-		InputStream inputStream;
 		try {
-			inputStream = Utils.getInputStreamOfAsset(this, "mockHunt.xml");
+			// Use Util method to fetch stream to mockHunt.xml, pass a valid android Context
+			// (http://developer.android.com/reference/android/content/Context.html)
+			// to give it access to android's assets folder
+			InputStream inputStream = Utils.getInputStreamOfAsset(this, "mockHunt.xml");
+			
+			// Use the SerialUtils method to inflate the inputStream's xml into a hunt.
+			// Pass the class you wish returned and the input stream we've already opened
 			Hunt h = SerialUtils.deserialize(Hunt.class, inputStream);
+			
+			// just to prove it worked, log the name of the hunt. this shows up
+			// in the LogCat view
 			Log.d(TAG, "Hunt name = " + h.getName());
 		} catch (IOException e) {
+			// Here is where we catch the exception thrown by the Utils.getInputStreamOfAsset
+			// method. We would normally want to do something more useful than just logging it
+			// but since our activity doesn't do anything yet, we'll just log it.
 			Log.e(TAG, "Exception opening asset!", e);
 		}
 	}

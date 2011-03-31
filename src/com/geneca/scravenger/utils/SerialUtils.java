@@ -12,11 +12,17 @@ import com.thoughtworks.xstream.io.xml.DomDriver;
 
 /**
  * Utilities for serialization and deserialization
+ * 
+ * **** NOTE ***** To get this to compile on your machine you will have to add 
+ * the xstream library to your build path. To do that, right click on your project
+ * and select 'Build Path' then 'Add external archives'. Then navigate to 
+ * Scravenger/libs/xstream-1.3.1.jar. Select it and click ok.
+ * 
  * @author Daniel.Hill
  *
  */
 public class SerialUtils {
-	private static final String TAG = "SerialUtils";
+	//private static final String TAG = "SerialUtils";
 	
 	private static XStream xstream;
 	
