@@ -6,7 +6,7 @@ public class Player {
 	private String _FirstName;
 	private String _LastName;
 	private String _NickName;
-	private Date _StartTime;
+	private Integer _ID;
 	
 	public String get_FirstName() {
 		return _FirstName;
@@ -26,11 +26,11 @@ public class Player {
 	public void set_NickName(String _NickName) {
 		this._NickName = _NickName;
 	}
-	public Date get_StartTime() {
-		return _StartTime;
+	public Integer get_ID() {
+		return _ID;
 	}
-	public void set_StartTime(Date _StartTime) {
-		this._StartTime = _StartTime;
+	public void set_ID(Integer _ID) {
+		this._ID = _ID;
 	}
 	
 }

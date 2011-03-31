@@ -3,6 +3,7 @@ package com.geneca.scravenger.models;
 import java.util.Date;
 
 public class Hunt {
+	private int _ID;
 	private String _City;
 	private String _State;
 	private String _Name;
@@ -20,5 +21,7 @@ public class Hunt {
 	public Date getStartTime(){return _StartTime;}
 	public void setEndTime(Date EndTime){_EndTime = EndTime;}
 	public Date getEndTime(){return _EndTime;}
+	public int get_ID(){return _ID;}
+	public void set_ID(int ID) {_ID = ID;}
 
 }
