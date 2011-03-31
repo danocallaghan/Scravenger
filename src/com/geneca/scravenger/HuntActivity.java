@@ -10,5 +10,6 @@ public class HuntActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         //pointless comment
+        //charles test - i will remove this line
     }
 }
