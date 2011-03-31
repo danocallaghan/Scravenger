@@ -1,1 +1,7 @@
+#/.gitignore
+#.project
+#.classpath
+.settings/
+build.properties
 bin/
+gen/
