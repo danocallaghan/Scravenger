@@ -1,36 +1,27 @@
 package com.geneca.scravenger.models;
 
-import java.util.Date;
 
-public class Player {
-	private String _FirstName;
-	private String _LastName;
-	private String _NickName;
-	private Integer _ID;
+public class Player extends BaseModel {
+	private String firstName;
+	private String lastName;
+	private String nickName;
 	
-	public String get_FirstName() {
-		return _FirstName;
+	public String getFirstName() {
+		return firstName;
 	}
-	public void set_FirstName(String _FirstName) {
-		this._FirstName = _FirstName;
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
 	}
-	public String get_LastName() {
-		return _LastName;
+	public String getLastName() {
+		return lastName;
 	}
-	public void set_LastName(String _LastName) {
-		this._LastName = _LastName;
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
 	}
-	public String get_NickName() {
-		return _NickName;
+	public String getNickName() {
+		return nickName;
 	}
-	public void set_NickName(String _NickName) {
-		this._NickName = _NickName;
+	public void setNickName(String nickName) {
+		this.nickName = nickName;
 	}
-	public Integer get_ID() {
-		return _ID;
-	}
-	public void set_ID(Integer _ID) {
-		this._ID = _ID;
-	}
-	
 }

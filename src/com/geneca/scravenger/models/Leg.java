@@ -2,11 +2,10 @@ package com.geneca.scravenger.models;
 
 import java.util.List;
 
-public class Leg {
+public class Leg extends BaseModel {
 	private float latitude;
 	private float longitude;
-	int id;
-	private List<Integer> hint_ids;
+	private List<Integer> hintIds;
 	private String name;
 	private String description;
 	
@@ -22,17 +21,11 @@ public class Leg {
 	public void setLongitude(float longitude) {
 		this.longitude = longitude;
 	}
-	public int getId() {
-		return id;
+	public List<Integer> getHintIds() {
+		return hintIds;
 	}
-	public void setId(int id) {
-		this.id = id;
-	}
-	public List<Integer> getHint_ids() {
-		return hint_ids;
-	}
-	public void setHint_ids(List<Integer> hint_ids) {
-		this.hint_ids = hint_ids;
+	public void setHintIds(List<Integer> hintIds) {
+		this.hintIds = hintIds;
 	}
 	public String getName() {
 		return name;

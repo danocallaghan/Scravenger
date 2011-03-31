@@ -1,6 +1,6 @@
 package com.geneca.scravenger.models;
 
-public class User {
+public class User extends BaseModel {
 	private int id;
 	private String name;
 	private String email;
