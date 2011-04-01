@@ -5,6 +5,7 @@ public class Player extends BaseModel {
 	private String firstName;
 	private String lastName;
 	private String nickName;
+	private int id;
 	
 	public String getFirstName() {
 		return firstName;
@@ -23,5 +24,11 @@ public class Player extends BaseModel {
 	}
 	public void setNickName(String nickName) {
 		this.nickName = nickName;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
 	}
 }
