@@ -1,6 +1,6 @@
 package com.geneca.scravenger.models;
 
-public class Hint extends BaseModel {
+public final class Hint extends BaseModel {
 	
 	public Hint(int id, String description)
 	{
@@ -8,10 +8,10 @@ public class Hint extends BaseModel {
 		this.description = description;
 	}
 	
-	private int id;
+	private final int id;
 	public int getId() { return id; }
 	
-	private String description;
+	private final String description;
 	public String getDescription() { return description; }
 	
 
