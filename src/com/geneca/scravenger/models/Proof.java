@@ -19,7 +19,7 @@ public abstract class Proof extends BaseModel{
     {
     	//Send the proof to the cloud (REST API)
     	
-    	//
+    	//return false for now
 		return false;
     	
     }
